@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OC Dice</string>
+    <string name="d_6_faces">Dé à 6 faces</string>
+    <string name="d_20_faces">Dé à 20 faces</string>
+    <string name="de_6">Dé à 6 faces</string>
+    <string name="de_20">Dé à 20 faces</string>
+    <string name="reroll">Relancer le dé</string>
+    <string name="roll">Lancer le dé</string>
+    <string name="title">Dé OC</string>
+    <string name="about">À propos</string>
+    <string name="about_text">Cette application vous permet de lancer soit un dé à 6 face ou bien
+        un dé à 20 faces</string>
+</resources>

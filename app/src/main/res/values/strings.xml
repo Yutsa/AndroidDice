@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OC Dice</string>
+    <string name="d_6_faces">6 faces dice</string>
+    <string name="d_20_faces">20 faces dice</string>
+    <string name="de_6">6 faces dice</string>
+    <string name="de_20">20 faces dice</string>
+    <string name="reroll">Reroll</string>
+    <string name="roll">Roll the dice</string>
+    <string name="title">OC Dice</string>
+    <string name="about">About</string>
+    <string name="about_text">This app allows you to roll either a 6 faced dice or a
+        20 faced dice.</string>
+</resources>
