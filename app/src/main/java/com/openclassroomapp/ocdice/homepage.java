@@ -2,6 +2,7 @@ package com.openclassroomapp.ocdice;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -45,6 +46,11 @@ public class homepage extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
+        ActionBar actionBar = this.getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setIcon(R.drawable.logo);
+            actionBar.setDisplayShowHomeEnabled(true);
+        }
         return true;
     }
 

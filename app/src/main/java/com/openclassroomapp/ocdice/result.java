@@ -1,7 +1,11 @@
 package com.openclassroomapp.ocdice;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -11,7 +15,7 @@ import java.util.Random;
 /**
  * @author Édouard WILLISSECK
  */
-public class result extends Activity implements View.OnClickListener {
+public class result extends AppCompatActivity implements View.OnClickListener {
     private TextView diceResult;
     private int max;
 
@@ -45,5 +49,20 @@ public class result extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         int result = rollDice(this.max);
         diceResult.setText("" + result);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_about) {
+            Intent intent = new Intent(result.this, AboutPage.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
